@@ -1,0 +1,62 @@
+<div class="store-container">
+
+    <div class="search-bar">
+        <div class="row bg-white">
+            <div class="col-sm-6 round-box  ">
+                <div ng-hide="!productlist.products.length">
+                    <input type="text" class="form-control"
+                        ng-model="productlist.search" placeholder="Search by 'name', e.g. Melange Slim Fit T-shirt">
+                    <i class="fa fa-times close-icon" ng-click="productlist.search = ''" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="col-sm-6 ">
+                <div>
+                    <div class="col-sm-6">
+                        <strong>Total:</strong> {{ productlist.products.length && productlist.products.length || 'no' }} products
+                    </div>
+                    <div class="col-sm-6">
+                        <strong>API Hits:</strong>
+                        <span class="APIhits">{{productlist.apiHits}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-listing">
+
+        <div ng-repeat="product in productlist.products | filter:{ name: productlist.search } | orderBy: 'name' ">
+            <div class="product-info">
+                <h2 class="">{{ product.name }} </h2>
+                <div class="content">
+                    <img src="{{product.image}}" alt="{{ product.name }}" />
+                </div>
+                <div class="price">
+                    <i class="fa fa-money" aria-hidden="true" title="price"></i>:
+                    <span>
+                        <i class="fa fa-inr" aria-hidden="true"></i>{{ product.price }}
+                    </span>
+                </div>
+                <div class="">
+                    <i class="fa fa-tags" aria-hidden="true"></i>:{{product.category === "0" ? "Apparel" : "Accessories"}} 
+                </div>
+                <div class="quantity">
+                    <span>
+                        <img src="resources/quantity.png" class="pull-left" />:
+                    </span>
+                    {{ product.quantity }} pcs available 
+                </div>
+                <div>
+                    <span style="background-color: {{ product.color }}">&nbsp;&nbsp;&nbsp;&nbsp;</span> &nbsp;<span>color</span>
+                </div>
+                <div>
+                    <a href="#/">Description#</a>
+                    <div class="desc">
+                        {{product.description}}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

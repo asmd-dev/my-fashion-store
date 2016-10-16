@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="FashionStoreApp">
+<head>
+    <meta charset="utf-8">
+    <title>My Fashion Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/product-listing.css" rel="stylesheet" />
+    <link href="css/pace-circle.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header" role="banner">
+        <img src="resources/logo.jpg" class="img-responsive" />
+    </header>
+    
+
+    <div class="container-fluid" role="main">
+        <div ng-view class="container"></div>
+    </div>
+
+    <!-- Vendor libraries -->
+    <script src="js/libs/angular-1.5.js"></script>
+    <script src="js/libs/angular-route-1.5.8.js"></script>
+    <script src="js/libs/angular-sanitize-1.5.8.js"></script>
+    <script src="js/libs/jquery.js"></script>
+    <script src="js/libs/pace.min.js"></script>
+
+    <!-- Application Files -->
+    <script src="js/app.js"></script>
+    <script src="js/components/products-listings/controller/ProductsCtrl.js"></script>
+    <script src="js/components/products-listings/factories/ProductsFactory.js"></script>
+    <script src="js/components/products-listings/directives/ProductsDrctv.js"></script>
+</body>
+</html>

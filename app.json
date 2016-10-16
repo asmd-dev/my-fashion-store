@@ -1,0 +1,6 @@
+{
+  "name": "Start on Heroku: Node.js",
+  "description": "my-fashion-store-app Fusion Style — Fashion is nothing without people!"
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}

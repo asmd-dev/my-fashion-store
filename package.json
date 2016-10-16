@@ -1,0 +1,21 @@
+{
+  "name": "my-fashion-store-app",
+  "version": "0.2.5",
+  "description": "Fusion Style — Fashion is nothing without people!",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.13.3"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

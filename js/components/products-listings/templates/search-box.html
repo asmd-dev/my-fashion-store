@@ -1,0 +1,40 @@
+﻿<i class="likes fa fa-thumbs-o-up" aria-hidden="true"></i>
+          <img class="pull-left" src="<%= image %>" alt="<%= name %>"/>
+       <div class="pull-left col-lg-8">
+         
+           <div>
+             <strong><%= name %></strong>
+          </div>
+            
+           <div  class="purchase-by">
+            <span>Purchased by:</span>
+            <span> <%= purchased_by %></span>
+        </div>
+           <div class="price-rating">
+            <span>
+                <i class="fa fa-money" aria-hidden="true" title="price"></i>
+                <span> <i class="fa fa-inr" aria-hidden="true"></i> <%= price %></span>
+            </span> |
+            <span>
+                <span> <%= rating %> 
+                    <input type="hidden" class="rating" data-filled="fa fa-star fa-1x" data-empty="fa fa-star-o fa-1x" data-readonly value="<%= rating %>"/>
+                </span>
+            </span>
+        </div>
+
+           <div class="tags">
+                 <i class="fa fa-tags" aria-hidden="true"></i>
+                <span><%= tags.join(', ') %></span>
+            </div>
+           
+           <div>
+                <i class="fa fa-external-link" aria-hidden="true"></i>
+               <span><a href="<%= link %>" target="_blank"><%= provider %></a></span>
+           </div>
+           
+        </div>
+       
+       <div>
+            
+        </div>
+    
