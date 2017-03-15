@@ -31,49 +31,48 @@
     line-height: 1.5em;
 }
 
-    .product-listing .product-info {
-        border: 1px solid #ccc;
-        border-radius: 2em;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        display: inline-block; /* Avoid breaks between columns */
-        padding: 3em;
-        margin: 0 0 1em 0;
-        width: 359px;
-        font-size: 15px;
-        background-color: #fff;
-    }
+.product-listing .product-info {
+    border: 1px solid #ccc;
+    border-radius: 2em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: inline-block; /* Avoid breaks between columns */
+    padding: 3em;
+    margin: 0 0 1em 0;
+    width: 359px;
+    font-size: 15px;
+    background-color: #fff;
+}
 
-        .product-listing .product-info br + br {
-            height: 0; /* avoid extra spaces */
-        }
+.product-listing .product-info br + br {
+    height: 0; /* avoid extra spaces */
+}
+.product-listing .product-info div {
+    margin-top: 5px;
+}
 
-        .product-listing .product-info div {
-            margin-top: 5px;
-        }
+.product-listing .product-info {
+    margin-bottom: 1.5em;
+}
 
-    .product-listing .product-info {
-        margin-bottom: 1.5em;
-    }
+.product-listing .product-info .desc {
+    font-weight: normal;
+    line-height: 20px;
+}
 
-        .product-listing .product-info .desc {
-            font-weight: normal;
-            line-height: 20px;
-        }
+.product-listing .product-info .quantity img {
+    width: 16px;
+    height: 16px;
+}
 
-        .product-listing .product-info .quantity img {
-            width: 16px;
-            height: 16px;
-        }
+.product-listing .product-info img,
+.product-listing .product-info iframe {
+    display: block;
+    max-width: 100%;
+}
 
-        .product-listing .product-info img,
-        .product-listing .product-info iframe {
-            display: block;
-            max-width: 100%;
-        }
-
-    .product-listing .product-info {
-        font-weight: 600;
-        margin-bottom: 0.75em;
-    }
+.product-listing .product-info {
+    font-weight: 600;
+    margin-bottom: 0.75em;
+}
